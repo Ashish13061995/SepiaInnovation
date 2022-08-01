@@ -47,14 +47,11 @@ public class Utils {
             e.printStackTrace();
         }
 
-        Log.e("AnimalDetails","DATE"+ "" + formattedDate);
-
-
         Date dt;
         try {
             dt = input.parse(dateAdded);
             formattedTime = sdfs.format(dt);
-            Log.e("AnimalDetails","Time Display: " + sdfs.format(dt)); // <-- I got result here
+
         } catch (ParseException e) {
             e.printStackTrace();
         }

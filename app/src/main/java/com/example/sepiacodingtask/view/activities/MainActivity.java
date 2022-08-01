@@ -71,8 +71,6 @@ public class MainActivity extends AppCompatActivity implements PetsListPresenter
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void checkWorkingTime() {
-        Date currentTime = Calendar.getInstance().getTime();
-        Log.e("MainActivity", "currentTime: "+currentTime );
 
         Calendar cal = Calendar.getInstance(); //Create Calendar-Object
         cal.setTime(new Date());               //Set the Calendar to now
@@ -81,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements PetsListPresenter
         LocalDate date = LocalDate.now();
         DayOfWeek dow = date.getDayOfWeek();
         String dayName = dow.getDisplayName(TextStyle.NARROW, Locale.ENGLISH);
-        Log.e("MainActivity", "dayName: "+dayName);
+
 
         if (!dayName.equals("S")){
 

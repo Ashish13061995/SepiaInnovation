@@ -46,7 +46,7 @@ public class PetsListPresenter {
                 String title = jo_inside.getString("title");
                 String content_url = jo_inside.getString("content_url");
                 String date_added = jo_inside.getString("date_added");
-                Log.e("MainActivity","title: "+ title);
+
 
                 pet.setImageUrl(image_url);
                 pet.setTitle(title);
